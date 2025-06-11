@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify Player</title>
+    <link
+      rel="icon"
+      href="https://imgs.search.brave.com/On682SE5xZ1Fw8JPf6yaR_O5T1SiJkEMY2AfeLVcpo4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy83/Lzc0L1Nwb3RpZnlf/QXBwX0xvZ28uc3Zn"
+      type="image/png"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="Style.css" />
+    <script src="./Script.js"></script>
+  </head>
+  <body>
+    <div class="container flex bg-black">
+      <div class="left">
+        <div class="home bg-gray rounded">
+          <div class="logo">
+            <img
+              class="ml-2 mt-1"
+              src="./Images/VonFire-removebg-preview.png"
+              alt="...Logo"
+              height="50px"
+            />
+          </div>
+          <ul class="small-menu ml-2">
+            <li>
+              <img class="invert" src="../Images/homeIcon.svg" alt="" />Home
+            </li>
+            <li>
+              <img class="invert" src="../Images/searchIcon.svg" alt="" /><label
+                for="search"
+                >Search</label
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="library bg-gray p-1 m-1 rounded">
+          <h4 class="h4">Your Labrary</h4>
+
+          <div class="songsPlayList">
+            <ul id="ul"></ul>
+          </div>
+          <div class="footer">
+            <a href="#">Legal</a>
+
+            <a href="#">Safety & Privacy Center</a>
+
+            <a href="#">Privacy Policy</a>
+
+            <a href="#">Cookies</a>
+
+            <div></div>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <nav class="bg-gray">
+          <div class="navbar">
+            <input type="search" id="search" placeholder="Search Song Here." />
+          </div>
+          <div class="button">
+            <button class="btn-primary">Sign up</button>
+            <button class="btn-primary" style="background-color: #1db954">
+              Log in
+            </button>
+          </div>
+        </nav>
+
+        <div class="play-list">
+          <h3>Songs Playlist</h3>
+          <div class="cardContainer">
+            <div class="card">
+              <img
+                src="https://i.scdn.co/image/ab67706f00000002e2881c83b28f451044b0b8f7"
+                alt="Loading Songs....."
+              />
+              <i class="bi bi-play-fill"></i>
+              <h3>Happy Hits.</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="card">
+              <img
+                src="https://i.scdn.co/image/ab67706f00000002665f3dd41399b0e59bf827ac"
+                alt="Loading Songs....."
+              />
+              <i class="bi bi-play-fill"></i>
+              <h3>Happy Hits.</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="card">
+              <img
+                src="https://i.scdn.co/image/ab67706f00000002ed9af7974cb083220f850e72"
+                alt="Loading Songs....."
+              />
+              <i class="bi bi-play-fill"></i>
+              <h3>Happy Hits.</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="card">
+              <img
+                src="https://i.scdn.co/image/ab67706f0000000241d850fa743e1ebf012a686e"
+                alt="Loading Songs....."
+              />
+              <i class="bi bi-play-fill"></i>
+              <h3>Happy Hits.</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="card">
+              <img
+                src="https://i.scdn.co/image/ab67616d00001e0295c503f1de8a9c978dca2209"
+                alt="Loading Songs....."
+              />
+              <i class="bi bi-play-fill"></i>
+              <h3>Happy Hits.</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="card">
+              <img
+                src="https://i.scdn.co/image/ab67616d00001e02c05d5034282ebb1a0d94a26c"
+                alt="Loading Songs....."
+              />
+              <i class="bi bi-play-fill"></i>
+              <h3>Happy Hits.</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="card">
+              <img
+                src="https://i.scdn.co/image/ab67616d00001e02fb617ce51e77be01738a1970"
+                alt="Loading Songs....."
+              />
+              <i class="bi bi-play-fill"></i>
+              <h3>Happy Hits.</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="card">
+              <img
+                src="https://i.scdn.co/image/ab67616d00001e02c7eccb5adb3e92a6b629a603"
+                alt="Loading Songs....."
+              />
+              <i class="bi bi-play-fill"></i>
+              <h3>Happy Hits.</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="playbar">
+          <div class="seekbar">
+            <div class="circle"></div>
+          </div>
+
+          <div class="main-playbar">
+            <div class="playButton">
+              <div class="sName"></div>
+
+              <div class="Buttons">
+                <i id="previous" class="bi bi-skip-backward-circle"></i>
+                <i id="playM" class="bi bi-play-circle"></i>
+                <i class="bi bi-skip-forward-circle"></i>
+              </div>
+
+              <div class="sTime"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
